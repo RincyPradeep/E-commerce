@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="container login">
+            <h2 class="text-center">Profile</h2>
+            <form action='/profile' method='POST'>            
+                        <label for="">Name</label>
+                        <input class="form-control" type="text" id="name" name="name" value="{{profile.Name}}">
+
+                        <label for="">Address</label>
+                        <input class="form-control" type="text" id="address" name="address" value="{{profile.Address}}">
+
+                        <label for="">Pincode</label>
+                        <input class="form-control" type="text" id="pincode" name="pincode" value="{{profile.Pincode}}">
+
+                        <label for="">Mobile</label>
+                        <input class="form-control" type="text" id="mobile" name="mobile" value="{{profile.Mobile}}">
+                       
+                       <button type="submit" class="btn order-btn mt-3 float-right">Submit</button>               
+                   </form>
+        </div>
+    </div>
+</div>

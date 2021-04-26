@@ -1,0 +1,26 @@
+<section>
+    <div class="container">
+        <table class="table table-responsive-sm mt-5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each user}}
+                <tr>
+                    <td>{{this.Name}}</td>
+                    <td>{{this.Address}}</td>
+                    <td>{{this.Pincode}}</td>
+                    <td>{{this.Mobile}}</td>
+                    <td>{{this.Email}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>

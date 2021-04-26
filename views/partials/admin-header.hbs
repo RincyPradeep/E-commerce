@@ -1,0 +1,39 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/admin">Admin Panel</a>
+        {{#if adminLogin}}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/admin"><b>All Products</b><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/admin/all-orders"><b>All Orders</b></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/admin/all-users"><b>All Users</b></a>
+                </li>
+                <li class="nav-item active">
+                    <div class="dropdown pt-2">
+                        <a class="dropdown-toggle ml-4" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>
+                                ADMIN
+                            </b>
+                        </a>
+                        <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item " href="/admin/change-password">Change Password</a>
+                            <a class="dropdown-item" href="/admin/logout">Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        {{/if}}
+    </nav>
+</header>
